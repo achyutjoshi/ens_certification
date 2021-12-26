@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
+</head>
+<body>
+<h1>ENS Certification</h1>
+<form action="/generate" method="POST">
+    <label form ="ens_name"> ENS Name </label>
+    <input type="text" id="ens_name" name="ens_name">
+    <br>
+    <label form ="block_id"> Block ID </label>
+    <input type="text" id="block_id" name="block_id">
+    <br>
+    <label form ="txn_id"> Transaction ID </label>
+    <input type="text" id="txn_id" name="txn_id">
+    <br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<hr id="line_breaks"></hr>
+<div class="tweet">
+    <h3>Inspired by</h3>
+<blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">Got my family NFTs for Christmas, but since they don&#39;t know how that works I got them a physical version to help teach them <a href="https://t.co/d8cfQ9FwKr">pic.twitter.com/d8cfQ9FwKr</a></p>&mdash; wagmilson™ (𝙳𝚒𝚜𝚊𝚖𝚋𝚒𝚐𝚞𝚊𝚝𝚒𝚘𝚗) (@wilsonsaccount) <a href="https://twitter.com/wilsonsaccount/status/1474842120389156864?ref_src=twsrc%5Etfw">December 25, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+ <p class="love">Made with ☕️ by <a href="https://twitter.com/achyutjoshi_" target="_blank">Achyut Joshi (achyut.eth)</a>.</p>
+<br>
+<br>
+<br>
+
+</body>
+</html>

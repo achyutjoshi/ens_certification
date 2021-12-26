@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Arial";
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #023047;
+    max-width: 80vh;
+  max-height: 80vh;
+  padding: 10px 100px;
+  margin: 0 auto;
+}
+
+h1 {
+text-align: center;
+}
+
+.tweet{
+  width: 100%;
+  height:auto;
+  }
+
+h3 {
+text-align: center;
+}
+
+label{
+    display: block;
+    text-align: center;
+    line-height: 150%;
+    font-size: .85em;
+}
+
+input {
+  border-top-style: grove;
+  border-right-style: groove;
+  border-left-style: groove;
+  border-bottom-style: groove;
+  font-size: 14px;
+  border: 1px solid rgba(63, 63, 170, 0.1);
+  display: block;
+  margin: 0 auto;
+}
+
+button {
+  padding: 9px 16px;
+  max-height: 40px;
+  /*box-shadow: 4px 4px 15px 0 rgb(0 0 0 / 20%);*/
+  /* border-color: #fcbf49; */
+  color: #a6e27c;
+  background-color: #011824ff;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 500;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  border-width: 0;
+}
+
+.love {
+  text-align: center;
+  color: #ffffff;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+a {
+  color: #a6e27c;
+  text-decoration: none;
+}
+
+#line_breaks {
+  border: 1px solid #686868;
+}
