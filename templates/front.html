@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <title>Hello</title>
     <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BBVYL3QYSE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BBVYL3QYSE');
+</script>
 </head>
 <body>
 <h1>ENS Certification</h1>
+<p>Please note, this is only for illustrative purpose to make onboarding to web3 a bit more easy. Gift a ENS this Holiday season and print this certificate.</p>
 <form action="/generate" method="POST">
     <label form ="ens_name"> ENS Name </label>
     <input type="text" id="ens_name" name="ens_name">
