@@ -13,6 +13,10 @@ body {
   margin: 0 auto;
 }
 
+.form-box{
+border: 2px;
+}
+
 h1 {
 text-align: center;
 }
@@ -30,7 +34,7 @@ label{
     display: block;
     text-align: center;
     line-height: 150%;
-    font-size: .85em;
+    font-size: .95em;
 }
 
 input {
@@ -46,13 +50,13 @@ input {
 
 button {
   padding: 9px 16px;
-  max-height: 40px;
+  max-height: 70px;
   /*box-shadow: 4px 4px 15px 0 rgb(0 0 0 / 20%);*/
   /* border-color: #fcbf49; */
   color: #a6e27c;
   background-color: #011824ff;
   align-items: center;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 500;
   text-align: center;
   font-weight: bold;
@@ -61,6 +65,7 @@ button {
   margin: 0 auto;
   border-width: 0;
 }
+
 
 .love {
   text-align: center;

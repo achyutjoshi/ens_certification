@@ -4,7 +4,8 @@ import uuid
 
 app = Flask(__name__)
 
-MEDIA_FOLDER = 'images'
+MEDIA_FOLDER = 'static/images'
+
 
 def create_image(generate_id, eth_name, block_id, txn_id):
     print(f'Starting for {generate_id}')
@@ -34,7 +35,6 @@ def create_image(generate_id, eth_name, block_id, txn_id):
     return output_name
 
 
-
 @app.route('/')
 def home():
     return render_template("front.html")
@@ -47,7 +47,13 @@ def generate():
     txn_id = request.form.get('txn_id')
     uid = str(uuid.uuid4())
     img_src = create_image(uid, ens_name, block_id, txn_id)
-    return send_from_directory(MEDIA_FOLDER, img_src, as_attachment=True)
+    return render_template('image.html', img_src=img_src)
+    # return send_from_directory(MEDIA_FOLDER, img_src, as_attachment=True)
+
+
+@app.route('/img_download/<filename>')
+def database_download(filename):
+    return send_from_directory(MEDIA_FOLDER, filename, as_attachment=True)
 
 
 if __name__ == "__main__":

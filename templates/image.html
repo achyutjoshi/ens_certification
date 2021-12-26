@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>ENS Certification</title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
+
 </head>
 <body>
-<img src={{img_src}}>
-
+<img src='static/images/{{ img_src }}'>
+<form action="/img_download/{{ img_src }}" >
+    <button>Download Image</button>
+</form>
 
 </body>
 </html>
